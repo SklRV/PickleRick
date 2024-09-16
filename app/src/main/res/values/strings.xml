@@ -1,0 +1,39 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Pickle Rick</string>
+    <string name="db_name">pickle_rick.db</string>
+
+    <!-- MainActivity -->
+    <string name="main_activity_filters">Filters</string>
+    <string name="main_activity_filters_button">Filters button</string>
+
+    <!-- CharacterInfoBlock -->
+    <string name="info_text_name">Name</string>
+    <string name="info_text_species">Species</string>
+    <string name="info_text_status">Status</string>
+    <string name="info_text_type">Type</string>
+    <string name="info_text_gender">Gender</string>
+    <string name="info_text_origin">Origin</string>
+    <string name="info_text_location">Location</string>
+    <string name="info_text_episodes">Episodes</string>
+    <string name="info_text_icon">\u0020 icon</string>
+
+    <!-- FiltersBottomSheetBlock -->
+    <string name="filters_apply_button">Apply!</string>
+    <string name="filters_gender">Gender:</string>
+    <string name="filters_status">Status:</string>
+    <string name="filters_all">All</string>
+
+    <!-- Info -->
+    <string name="have_not_favorite_characters">You don\'t have any favorite characters yet =(</string>
+    <string name="have_not_filtered_favorite_characters">You don\'t have favorite characters with these filters =(</string>
+    <string name="error_text">Ooops, something went wrong…</string>
+    <string name="error_internet_text">Ooops, something went wrong with internet…\nCheck your connection or enable VPN</string>
+    <string name="error_refresh_text">REFRESH</string>
+
+    <!-- Compose Blocks -->
+    <string name="favorite_button">Favorite Button</string>
+    <string name="avatar">avatar</string>
+    <string name="nav_bar_icon">\u0020Navigation bar icon</string>
+
+</resources>

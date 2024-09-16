@@ -1,0 +1,55 @@
+query AllCharactersPagesQuery(
+    $page: Int,
+    $gender:String,
+    $status: String
+) {
+    characters(
+        page: $page,
+        filter: {
+            gender: $gender,
+            status: $status
+        }
+    )
+    {
+        info {
+            pages,
+            count,
+            next
+        }
+        results {
+            ...CharacterFragment
+        }
+    }
+}
+
+query AllFavoriteCharactersQuery($ids: [ID!]!) {
+    charactersByIds(ids: $ids) {
+        ...CharacterFragment
+    }
+}
+
+query CharacterByIdQuery($id: ID!) {
+    character(id: $id) {
+        ...CharacterFragment
+        type,
+        origin {
+            name
+        },
+        location {
+            name
+        },
+        episode{
+            name,
+            air_date
+        }
+    }
+}
+
+fragment CharacterFragment on Character {
+    id,
+    name,
+    species,
+    status,
+    gender,
+    image
+}
